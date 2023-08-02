@@ -1,0 +1,38 @@
+
+h1{
+     text-align: center;
+     text-decoration: underline;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.grid-container{
+     display: grid;
+     max-width: 1200px;
+     width: 100%;
+     grid-template-columns: repeat(3,1fr);
+     padding: 10px;
+     grid-gap: 10px;
+     margin: auto;
+}
+
+.grid-item{
+     padding: 2px;
+     height: 250px;
+     text-align: center;
+     border-radius: 20px;
+}
+
+.grid-item img{
+     height: 100%;
+     width: 100%;
+     border: 3px solid black;
+     border-radius: 20px;
+}
+
+@media screen  and (max-width:768px){
+     .grid-container{
+          grid-template-columns:1fr;
+     }
+     
+}
